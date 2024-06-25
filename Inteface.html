@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----Header Tab Setup (Icons and Name)----->
+    <title>Create an Online Portfolio | Jimdo</title>
+    <link rel="icon" type="image/x-icon" href="images/Tab_Icon.png">
+    <link rel="stylesheet" href="Code.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <!-----Links for Fonts----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+    <!-----Header Setup----->
+    <section id="header2" class="headersect">
+        <div id="logos" class="item-h1">
+            <div><img src="images/Jimdo_Logo.png"></div>
+            <div id="menuholds" onclick="showMenu()"><svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg></div>
+            <div id="menuclose" onclick="hideMenu()" class="closer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+            </div>
+        </div>
+        <!-----Script for Showing and Hiding Side bar----->
+        <script>
+            //=====Show Side Bar=====//   
+            function showMenu() {
+                menuholds.style.display = "none";
+                menuclose.style.display = "flex";
+                header2.style.height = "100vh";
+                header2.style.margin = "0px 0px 0px -60px";
+                logos.style.margin = "0px -60px 0px 60px"
+                website.style.display = "flex";
+                business.style.display = "flex";
+                online.style.display = "flex";
+                knowledge.style.display = "flex";
+                help.style.display = "flex";
+                login.style.display = "flex";
+                sign.style.display = "flex";
+            }
+            //=====Hide Side Bar=====//
+            function hideMenu() {
+                mainmenu.style.display = "none";
+                menuclose.style.display = "none";
+                menuholds.style.display = "flex";
+                header2.style.height = "68px"
+                header2.style.margin = "0px 0px 0px 0px";
+                logos.style.margin = "0px 0px 0px 0px"
+                website.style.display = "none";
+                online.style.display = "none";
+                knowledge.style.display = "none";
+                help.style.display = "none";
+                login.style.display = "none";
+                sign.style.display = "none";
+                business.style.display = "none";
+            }
+        </script>
+        <!-----Header Tabs [Left]----->
+        <!-----Website----->
+        <div class="tabsleft">
+            <div class="tab1">
+                <button id="website" class="websitedrop" onclick="functionhideheader1()">Website<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="NavButton-module--arrowIcon--e8965"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg></i></button>
+                <!-----Website Tab Content----->
+                <div class="websitecontent">
+                    <div class="website-row">
+                        <div class="website-col1">
+                            <h1>OUR WEBSITE BUILDER</h1>
+                            <ul>
+                                <li><a href="">Create a website</a></li>
+                                <li><a href="">Pricing and plans</a></li>
+                                <li><a href="">Website example</a></li>
+                                <li><a href="">Your own domain</a></li>
+                            </ul>
+                        </div>
+                        <div class="website-col2">
+                            <h1>USEFUL TOOLS FOR YOUR WEBSITE</h1>
+                            <ul>
+                                <li><a href="">Warning-proof legal texts<p>For privacy and policy & Co</p></a></li>
+                                <li><a href="">Industry entries<p>For Google, Facebook & Co.</p></a></li>
+                                <li><a href="">Online booking<p>Directly via your website</p></a></li>
+                                <li><a href="">Social media integration<p>Promote on Facebook</p></a></li>
+                            </ul>
+                        </div>
+                        <div class="website-col3">
+                            <h1>OUR WEBSITE BUILDER</h1>
+                            <ul>
+                                <li><a href="">Online portfolio</a></li>
+                                <li><a href="">Restaurant websites</a></li>
+                                <li><a href="">Coaches</a></li>
+                                <li><a href="">Musicians & Bands</a></li>
+                                <li><a href="">Real estate agents</a></li>
+                                <li><a href="">Doctors & practices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----Online----->
+            <div class="tab2">
+                <button id="online" class="onlinedrop" onclick="functionhideheader2()">Online Store<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="NavButton-module--arrowIcon--e8965"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg></button>
+                <!-----Online Tab Content----->
+                <div class="onlinecontent">
+                    <div class="online-row">
+                        <div class="online-col1">
+                            <h1>OUR ONLINE STORE BUILDER</h1>
+                            <ul>
+                                <li><a href="">Create an online store</a></li>
+                                <li><a href="">Pricing and plans</a></li>
+                                <li><a href="">Online store examples</a></li>
+                                <li><a href="">Your own domain</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-col2">
+                            <h1>USEFUL TOOLS FOR YOUR STORE</h1>
+                            <ul>
+                                <li><a href="">Warning-proof legal texts<p>For general terms and conditions, privacy policy & Co</p></a></li>
+                                <li><a href="">Industry entries<p>For Google, Facebook & Co</p></a></li>
+                                <li><a href="">Social media integration<p>Sell on Facebook  & Instagram</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----Business-Tools----->
+            <div class="tab2">
+                <button id="business" class="onlinedrop" onclick="functionhideheader3()">Business-Tools<i><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="NavButton-module--arrowIcon--e8965"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg></i></button>
+                <!-----Business Tab Content----->
+                <div class="onlinecontent">
+                    <div class="online-row">
+                        <div class="online-col1">
+                            <h1>A LOGO FOR YOUR BUSINESS</h1>
+                            <ul>
+                                <li><a href="">Logo Generetor<p>Create your own free logo</p></a></li>
+                                <li><a href="">Logo examples<p>Get Inspired</p></a></li>
+                            </ul>
+                        </div>
+                        <div class="online-col2">
+                            <h1>MORE USEFUL TOOLS</h1>
+                            <ul>
+                                <li><a href="">Industry entries<p>For Google, Facebook & Co</p></a></li>
+                                <li><a href="">Warning-proof legal texts<p>For privacy policy & Co</p></a></li>
+                                <li><a href="">Social Media integration<p>Sell on Facebook & Instagram</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----Header Tabs [Right]----->
+        <div class="tabsright">
+            <div class="tab3">
+                <button id="knowledge" class="knowledgedrop" onclick="functionhideheader4()">Knowledge Guide<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="NavButton-module--arrowIcon--e8965"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg></button>
+                <!-----Header Tab Content----->
+                <div class="knowledgecontent">
+                    <div class="knowledge-row">
+                        <div class="knowledge-col1">
+                            <h1>EXPERTISE, TIPS AND INSPIRATION</h1>
+                            <ul>
+                                <li><a href="">All Topics<p>Knowledge guide overview</p></a></li>
+                                <li><a href="">Website Tips<p>Get the most out of your website</p></a></li>
+                                <li><a href="">Business Knowledge<p>Everything about your <self-employment></self-employment></p></a></li>
+                                <li><a href="">Sucess stories<p>Inspiring stories by real Jimdo customers</p></a></li>
+                                <li><a href="">Jimdo Updates<p>What's new at Jimdo?</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab3">
+                <button id="help" class="helpdrop" onclick="functionhideheader5()">Help<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="NavButton-module--arrowIcon--e8965"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg></button>
+                <!-----Help Tab Content----->
+                <div class="helpcontent">
+                    <div class="help-row">
+                        <div class="help-col1">
+                            <h1>HOW CAN WE HELP YOU?</h1>
+                            <ul>
+                                <li><a href="">Help center<p>Find answers to your questions</p></a></li>
+                                <li><a href="">Contact support<p>Our support team is here for you</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----Login/Signup Button----->
+            <div class="tab3">
+                <button id="sign" class="signbtn">Sign Up</button>
+            </div>
+            <div class="tab3">
+                <button id="login" class="loginbtn">Log in</button>
+            </div>
+        </div>
+    </section>
+    <!-----Main Menu----->
+    <section id="mainmenu" class="mainmenu">
+        <!-----SideBar Logo----->
+        <div class="logomenu">
+            <div><img src="images/Jimdo_Logo.png"></div>
+            <div id="menucloser" onclick="hideMenu()" class="closer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+            </div>
+            <!-----Main Menu Section----->
+        </div>
+        <div id="mainbut" class="mainbtn" onclick="showheader()"><button class="menu"> Main Menu </button><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="NavButton-module--arrowIcon--e8965"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg>            </div>
+        <div class="menucontents">
+            <!-----SideBar Content----->
+            <div id="websitescol" class="columns">
+                <h1>OUR WEBSITE BUILDER</h1>
+                <ul>
+                    <li><a href="">Create a website</a></li>
+                    <li><a href="">Pricing and plans</a></li>
+                    <li><a href="">Website example</a></li>
+                    <li><a href="">Your own domain</a></li>
+                </ul>
+                <h1>USEFUL TOOLS FOR YOUR WEBSITE</h1>
+                <ul>
+                    <li><a href="">Warning-proof legal texts<p>For privacy and policy & Co</p></a></li>
+                    <li><a href="">Industry entries<p>For Google, Facebook & Co.</p></a></li>
+                    <li><a href="">Online booking<p>Directly via your website</p></a></li>
+                    <li><a href="">Social media integration<p>Promote on Facebook</p></a></li>
+                </ul>
+            </div>
+            <div id="onlinescol" class="columns">
+                <h1>OUR ONLINE STORE BUILDER</h1>
+                <ul>
+                    <li><a href="">Create an online store</a></li>
+                    <li><a href="">Pricing and plans</a></li>
+                    <li><a href="">Online store examples</a></li>
+                    <li><a href="">Your own domain</a></li>
+                </ul>
+                <h1>MORE USEFUL TOOLS</h1>
+                <ul>
+                    <li><a href="">Industry entries<p>For Google, Facebook & Co</p></a></li>
+                    <li><a href="">Warning-proof legal texts<p>For privacy policy & Co</p></a></li>
+                    <li><a href="">Social Media integration<p>Sell on Facebook & Instagram</p></a></li>
+                </ul>
+            </div>
+            <div id="businessscol" class="columns">
+                <h1>A LOGO FOR YOUR BUSINESS</h1>
+                <ul>
+                    <li><a href="">Logo Generetor<p>Create your own free logo</p></a></li>
+                    <li><a href="">Logo examples<p>Get Inspired</p></a></li>
+                </ul>
+                <h1>MORE USEFUL TOOLS</h1>
+                <ul>
+                    <li><a href="">Industry entries<p>For Google, Facebook & Co</p></a></li>
+                    <li><a href="">Warning-proof legal texts<p>For privacy policy & Co</p></a></li>
+                    <li><a href="">Social Media integration<p>Sell on Facebook & Instagram</p></a></li>
+                </ul>
+            </div>
+            <div id="knowledgescol" class="columns">
+                <h1>EXPERTISE, TIPS AND INSPIRATION</h1>
+                <ul>
+                    <li><a href="">All Topics<p>Knowledge guide overview</p></a></li>
+                    <li><a href="">Website Tips<p>Get the most out of your website</p></a></li>
+                    <li><a href="">Business Knowledge<p>Everything about your <self-employment></self-employment></p></a></li>
+                    <li><a href="">Sucess stories<p>Inspiring stories by real Jimdo customers</p></a></li>
+                    <li><a href="">Jimdo Updates<p>What's new at Jimdo?</p></a></li>
+                </ul>
+            </div>
+            <div id="helpscol" class="columns">
+                <h1>HOW CAN WE HELP YOU?</h1>
+                <ul>
+                    <li><a href="">Help center<p>Find answers to your questions</p></a></li>
+                    <li><a href="">Contact support<p>Our support team is here for you</p></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-----Script for Click Events on SideBar----->
+    <script>
+        function functionhideheader1() {
+            if (header2.style.height === "100vh") {
+                header2.style.display = "none";
+                mainmenu.style.display = "block";
+                websitescol.style.display = "block";
+                onlinescol.style.display = "none";
+                businessscol.style.display = "none";
+                knowledgescol.style.display = "none";
+                helpscol.style.display = "none";
+
+            }
+        }
+
+        function functionhideheader2() {
+            if (header2.style.height === "100vh") {
+                header2.style.display = "none";
+                mainmenu.style.display = "block";
+                websitescol.style.display = "none";
+                onlinescol.style.display = "block";
+                businessscol.style.display = "none";
+                knowledgescol.style.display = "none";
+                helpscol.style.display = "none";
+            }
+        }
+
+        function functionhideheader3() {
+            if (header2.style.height === "100vh") {
+                header2.style.display = "none";
+                mainmenu.style.display = "block";
+                websitescol.style.display = "none";
+                onlinescol.style.display = "none";
+                businessscol.style.display = "block";
+                knowledgescol.style.display = "none";
+                helpscol.style.display = "none";
+            }
+        }
+
+        function functionhideheader4() {
+            if (header2.style.height === "100vh") {
+                header2.style.display = "none";
+                mainmenu.style.display = "block";
+                websitescol.style.display = "none";
+                onlinescol.style.display = "none";
+                businessscol.style.display = "none";
+                knowledgescol.style.display = "block";
+                helpscol.style.display = "none";
+            }
+        }
+
+        function functionhideheader5() {
+            if (header2.style.height === "100vh") {
+                header2.style.display = "none";
+                mainmenu.style.display = "block";
+                websitescol.style.display = "none";
+                onlinescol.style.display = "none";
+                businessscol.style.display = "none";
+                knowledgescol.style.display = "none";
+                helpscol.style.display = "block";
+            }
+        }
+
+        function showheader() {
+            header2.style.display = "";
+            mainmenu.style.display = "none";
+        }
+    </script>
+
+    <!-----Section1----->
+    <section class="section1">
+        <div class="contsect1">
+            <div class="text">
+                <h1>Create an Online Portfolio With Jimdo</h1>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="currentColor" fill-rule="evenodd" d="M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z M13.2,19.7042328 L8.53333333,14.9901876 L6.66666667,16.8758057 L13.2,23.4754689 L25.3333333,11.2189514 L23.4666667,9.33333333 L13.2,19.7042328 Z"></path>
+                            </svg> Perfect for artist and creatives</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="currentColor" fill-rule="evenodd" d="M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z M13.2,19.7042328 L8.53333333,14.9901876 L6.66666667,16.8758057 L13.2,23.4754689 L25.3333333,11.2189514 L23.4666667,9.33333333 L13.2,19.7042328 Z"></path>
+                            </svg> Reach a larger audience</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="currentColor" fill-rule="evenodd" d="M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z M13.2,19.7042328 L8.53333333,14.9901876 L6.66666667,16.8758057 L13.2,23.4754689 L25.3333333,11.2189514 L23.4666667,9.33333333 L13.2,19.7042328 Z"></path>
+                      </svg> Show off what you can do</li>
+                </ul>
+                <button class="sec1businessbtn">Start Now</button>
+                <br>
+                <p>Start for free and upgrade anytime to one of our premium plans</p>
+            </div>
+            <div class="item-sa1">
+                <img src="images/Section1.jpg">
+            </div>
+        </div>
+    </section>
+    <!-----Section2----->
+    <section class="section2">
+        <div class="contsect2-title">
+            <h1>Portfolio site features that matter</h1>
+        </div>
+        <div class="contsect2">
+            <div class="item-sa2">
+                <img src="images/Section2A.png">
+            </div>
+            <div class="text-sa2">
+                <h1>Beautiful visuals, by design</h1>
+                <p>Polished. Professional. Eye-catching. With Jimdo's design tools, your online portfolio makes the best impression. Choose colors and fonts, and even design your own logo. Then show off your work in high-impact slideshows.</p>
+            </div>
+        </div>
+        <div class="contsect2">
+            <div class="item-sb2">
+                <img src="images/Section2B.png">
+            </div>
+            <div class="text-sb2">
+                <h1>Help search engines find you</h1><br>
+                <p>Want your portfolio website to find the right audience? Our automatic SEO tools and tips walk you through every step, even if you’re a beginner. Show up on Google and track traffic with Statistics, too.</p>
+            </div>
+        </div>
+        <div class="contsect2">
+            <div class="item-sc2">
+                <img src="images/Section2C.png">
+            </div>
+            <div class="text-sc2">
+                <h1>Connect to social media in seconds</h1><br>
+                <p>Already using Instagram or Facebook? That makes it even easier to build your online portfolio. Pull in photos right from your existing accounts, so your website is ready in a snap. </p>
+            </div>
+        </div>
+    </section>
+    <!-----Section3----->
+    <section class="section3">
+        <div class="contsect3">
+            <div class="text-sa3">
+                <h1>How to make an online portfolio</h1>
+                <p>If you're a photographer, artist, designer, model, or creative, putting your work online is the best way to reach a larger audience. And you can do it in 4 easy steps.</p>
+                <div class="list-sa3">
+                    <ol>
+                        <li>Sign up or log in with social media. You’ll also be able to choose a domain (website address) for your portfolio site.</li>
+                        <li>Tell us a little about your work. Answer a few questions and our portfolio maker creates the website for you.</li>
+                        <li>Add your images. Connect your social media accounts to pull in your images from around the web, or easily upload them.</li>
+                        <li>Publish your site—and you’re online! Then follow our quick and easy tips to optimize your portfolio site even more!</li>
+                    </ol>
+                </div>
+                <div>
+                    <button class="sec3startbtn">Start Now</button>
+                </div>
+
+            </div>
+            <div class="item-s3">
+                <img src="images/Section3.jpg">
+            </div>
+        </div>
+    </section>
+    <!-----Section4----->
+    <section class="section4">
+        <div class="contsect4">
+            <div class="contsect4-title">
+                <h1>What kind of portfolio website will you create?</h1>
+            </div>
+            <div class="items-sa4">
+                <img src="images/Section4A.png">
+                <h1>Graphic designer portfolio</h1>
+                <p>Your graphic design online portfolio shows off your skills and work examples in one place, from different design programs to different mediums.</p>
+                <div class="startstuff">
+                    <li><a>Start Now <img src="images/Right Arrow.svg"><a></li>
+                </div>
+            </div>
+            <div class="items-sb4">
+                <img src="images/Section4B.png">
+                <h1>Photographer portfolio</h1>
+                <p>Building a photography portfolio means focusing on the work, not the website. Jimdo’s modern designs keep your images front and center. You can accept bookings, too!</p>
+                <div class="startstuff">
+                    <li><a>Start Now <img src="images/Right Arrow.svg"><a></li>
+                </div>
+            </div>
+            <div class="items-sc4">
+                    <img src="images/Section4C.png">
+                    <h1>Artist portfolio</h1>
+                    <p>Want to put your art online and sell it, too? Upload high-resolution images, post new work, and build your client base with a portfolio and online store all in one</p>
+                <div class="startstuff">
+                    <li><a>Start Now <img src="images/Right Arrow.svg"><a></li>
+                </div>
+            </div>
+                <div class="items-sd4">
+                    <img src="images/Section4D.png">
+                    <h1>Model portfolio</h1>
+                    <p>You’re versatile and stylish, and your portfolio can be too. A website is a platform that you control, and it’s easy to use images right from your social media accounts.</p>
+                    <div class="startstuff">
+                        <li><a>Start Now <img src="images/Right Arrow.svg"><a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----Section5----->
+    <section id="slider" class="pt-5">
+        <h1>Get portfolio design inspiration with these examples</h1>
+        <p>Artists ♡ Jimdo! Spark your creativity with these website portfolio examples built with Jimdo.</p>
+        <div class="container">
+            <div class="slider">
+                      <div class="owl-carousel">
+                          <div class="slider-card">
+                              <div class="d-flex justify-content-center align-items-center mb-4">
+                                  <img src="images/Section5A.png">
+                              </div>
+                          </div>
+                          <div class="slider-card">
+                              <div class="d-flex justify-content-center align-items-center mb-4">
+                                  <img src="images/Section5B.png">
+                              </div>
+                          </div>
+                          <div class="slider-card">
+                              <div class="d-flex justify-content-center align-items-center mb-4">
+                                  <img src="images/Section5C.png">
+                              </div>
+                          </div>
+                          <div class="slider-card">
+                              <div class="d-flex justify-content-center align-items-center mb-4">
+                                  <img src="images/Section5D.png">
+                              </div>
+                          </div>
+                          <div class="slider-card">
+                              <div class="d-flex justify-content-center align-items-center mb-4">
+                                  <img src="images/Section5E.png">
+                              </div>
+                          </div>
+                          <div class="slider-card">
+                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                    <img src="images/Section5F.png">
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+        </div>
+        <!-----Scripts for Carousel----->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+	    <script src="js/owl.carousel.min.js"></script>
+	    <script src="js/java.js"></script>
+      </section>
+
+    <!-----Section6----->
+    <section class="section6">
+        <div class="contsect6-title">
+            <h1>Online portfolio FAQ</h1>
+        </div>
+        <div class="contsect6">
+            <!-----Hidden and Header Text for Section6----->
+                <div class="contsect6-text">
+                    <div class=texta6 onclick="hiddena()">
+                        <h1>What are the benefits of having an online portfolio? </h1>
+                        <div id="svg1">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hiddena6" id="hiddena6">
+                        <p>Creating an online portfolio is one of the best ways to show off your best work, all in one place. Even if you’re already using different social media accounts, putting your portfolio online gives you an online hub for potential clients, customers, agencies, and recruiters to see what you can do. It’s all on a platform you control, no matter how social media trends change. Plus, you can customize your design exactly how you want it.<p>
+                    </div>
+                    <div class=textb6 onclick="hiddenb()">
+                        <h1>How do I make a good portfolio website? </h1>
+                        <div id="svg2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hiddenb6" id="hiddenb6">
+                        <p>Fortunately with Jimdo, most of the portfolio creation is already done for you! The best way to create a good online portfolio is to start with a custom domain. That shows the world that you take your project seriously and professionally. Once you put your portfolio online, make sure you use high-quality images, and choose a high-impact image for the header of your homepage to grab people’s attention. In addition to design, be sure to take a few minutes to optimize your site for search engines (Jimdo will walk you through how to do that). That way, your portfolio will start showing up in search engines for the right audience, and your traffic will grow.<p>
+                    </div>
+                    <div class=textc6 onclick="hiddenc()">
+                        <h1>What should I put in my online portfolio?</h1>
+                        <div id="svg3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hiddenc6" id="hiddenc6">
+                        <p>A good portfolio website doesn’t have to be complicated. It’s a good idea to include a short bio and headshot on your About page, as well as any relevant skills or experience. Then, you can have some fun putting together the visuals on your site, either in a slide show or just by placing the images on your web pages. When you do this, try to choose just your best work. Don’t post everything you’ve ever done—be picky and keep in mind that many online visitors have short attention spans and don’t want to browse through years of your work. You can also easily add a contact form so visitors know how to get in touch with you.<p>
+                    </div>
+                    <div class=textd6 onclick="hiddend()">
+                        <h1>Why is an online portfolio important for a designer? </h1>
+                        <div id="svg4">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hiddend6" id="hiddend6">
+                        <p>When you’re a designer, visuals are a huge part of the story. An online portfolio helps you go beyond a paper resume and portfolio and really start attracting the attention of hiring managers and potential customers. By putting your designer portfolio online, you can show off all sorts of work beyond print—including video, multimedia, and more. It’s also a good way to let your personality shine through and share your photography, modeling shots, or graphic design work in a more personal way.<p>
+                    </div>
+                    <div class=texte6 onclick="hiddene()">
+                        <h1>How do i choose the right design for my portfolio website? </h1>
+                        <div id="svg5">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hiddene6" id="hiddene6" >
+                        <p>The best portfolio website designs and templates are clean, modern, and show off your work without distractions. When you sign up for Jimdo, you’ll be able to pick a style that fits you, and then the design of the website is taken care of! Once you create your online portfolio, you can tweak it and customize it as you like, but all the heavy lifting is done for you. So you can spend more time on your actual work, and less time laboring over your website.<p>
+                    </div>
+                </div>
+        </div>
+        <!-----Style (Hidden Items)----->
+        <style>
+            #hiddena6 {
+                padding-top: 16px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                max-width: 882px;
+                overflow: hidden;
+                height: 0px;
+            }
+            #hiddenb6 {
+                padding-top: 16px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                max-width: 882px;
+                overflow: hidden;
+                height: 0px;
+            }
+            #hiddenc6 {
+                padding-top: 16px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                max-width: 882px;
+                overflow: hidden;
+                height: 0px;
+            }
+            #hiddend6 {
+                padding-top: 16px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                max-width: 882px;
+                overflow: hidden;
+                height: 0px;
+            }
+            #hiddene6 {
+                padding-top: 16px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                max-width: 882px;
+                overflow: hidden;
+                height: 0px;
+            }
+            /*=====Media For Hidden Stuff=====*/
+            @media (max-width: 947px) {
+                #hiddena6{
+                    font-size: 14px; 
+                }
+                #hiddenb6{
+                    font-size: 14px; 
+                }
+                #hiddenc6{
+                    font-size: 14px; 
+                }
+                #hiddend6{
+                    font-size: 14px; 
+                }
+                #hiddene6{
+                    font-size: 14px; 
+                }
+            }
+        </style>
+        <!-----Java Script (Hidden Items)----->
+        <script>
+            function hiddena() {
+              var x = document.getElementById("hiddena6");
+              if (x.style.height === "0px") {
+                x.style.height = "auto";
+                svg1.style.transform = "rotate(-135deg)";
+              } else {
+                x.style.height = "0px";
+                svg1.style.transform = "rotate(0deg)";
+              }
+            }
+            function hiddenb() {
+              var x = document.getElementById("hiddenb6");
+              if (x.style.height === "0px") {
+                x.style.height = "auto";
+                svg2.style.transform = "rotate(-135deg)";
+              } else {
+                x.style.height = "0px";
+                svg2.style.transform = "rotate(0deg)";
+              }
+            }
+            function hiddenc() {
+              var x = document.getElementById("hiddenc6");
+              if (x.style.height === "0px") {
+                x.style.height = "auto";
+                svg3.style.transform = "rotate(-135deg)";
+              } else {
+                x.style.height = "0px";
+                svg3.style.transform = "rotate(0deg)";
+              }
+            }
+            function hiddend() {
+              var x = document.getElementById("hiddend6");
+              if (x.style.height === "0px") {
+                x.style.height = "auto";
+                svg4.style.transform = "rotate(-135deg)";
+              } else {
+                x.style.height = "0px";
+                svg4.style.transform = "rotate(0deg)";
+              }
+            }
+            function hiddene() {
+              var x = document.getElementById("hiddene6");
+              if (x.style.height === "0px") {
+                x.style.height = "auto";
+                svg5.style.transform = "rotate(-135deg)";
+              } else {
+                x.style.height = "0px";
+                svg5.style.transform = "rotate(0deg)";
+              }
+            }
+        </script>
+    </section>
+    <!-----Section7----->
+    <section class="section7">
+        <div class="contsect7-title">
+            <h1>Show off your hard work</h1>
+            <h2>A portfolio creator for every profession</h2>
+        </div>
+        <div class="contsect7">
+            <div class="contsect7-item1">
+                <h1>Freelancer</h1>
+                <p>Every freelancer needs a website to attract new customers, find work, and show off your skills. Build your own portfolio, with no coding required!</p>
+                <a>
+                    <h4>Freelance website how-to <img src="images/Right Arrow.svg"></h4>
+                </a>
+                </div>
+                <div class="contsect7-item2">
+                    <h1>Photography</h1>
+                    <p>Photographers love Jimdo for its beautiful and easy portfolio websites. See how you can get your photos online quickly and start taking bookings.</p>
+                    <a>
+                        <h4>Photography website how-to <img src="images/Right Arrow.svg"></h4>
+                    </a>
+                </div>
+                <div class="contsect7-item3">
+                    <h1>Design</h1>
+                    <p>Create an art portfolio that matches your style. Our built-in tools will help you improve your search engine ranking and even sell your artwork online.</p>
+                    <a>
+                        <h4>How to design a website <img src="images/Right Arrow.svg"></h4>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-----Footer----->
+    <section class="footer">
+        <div class="contfooter">
+            <!-----Footer [Socials]----->
+            <div class="footer-socials">
+                <a><img src="images/Jimdo_Logo.png"></a>
+                <ul>
+                    <li>
+                        <a><svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 0C10.745 0 0 10.81 0 24.147 0 36.199 8.776 46.189 20.25 48V31.127h-6.094v-6.98h6.094v-5.32c0-6.052 3.583-9.395 9.065-9.395 2.626 0 5.372.472 5.372.472v5.942h-3.026c-2.981 0-3.911 1.862-3.911 3.771v4.53h6.656l-1.064 6.98H27.75V48C39.224 46.189 48 36.199 48 24.147 48 10.81 37.255 0 24 0z" fill="currentColor" fill-rule="evenodd"></path></svg></a>
+                        <a><svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="instagram_svg__a" d="M0 .015h47.8V47.81H0z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="instagram_svg__b" fill="#fff"><use xlink:href="#instagram_svg__a"></use></mask><path d="M23.955 2.372c-5.862 0-6.597.025-8.899.13-2.297.104-3.866.47-5.239 1.003a10.568 10.568 0 00-3.823 2.49c-1.2 1.2-1.938 2.403-2.49 3.822-.533 1.373-.898 2.942-1.002 5.24-.105 2.301-.13 3.036-.13 8.898 0 5.861.025 6.596.13 8.898.104 2.298.47 3.867 1.003 5.24a10.573 10.573 0 002.49 3.822c1.2 1.2 2.403 1.938 3.822 2.49 1.373.533 2.942.898 5.24 1.003 2.301.105 3.036.13 8.898.13 5.861 0 6.596-.025 8.898-.13 2.298-.105 3.867-.47 5.24-1.003 1.419-.552 2.622-1.29 3.822-2.49 1.2-1.2 1.938-2.403 2.49-3.822.533-1.373.898-2.942 1.003-5.24.105-2.302.13-3.037.13-8.898 0-5.862-.025-6.597-.13-8.899-.105-2.297-.47-3.866-1.003-5.239-.552-1.42-1.29-2.623-2.49-3.823-1.2-1.2-2.403-1.938-3.822-2.49-1.373-.533-2.942-.898-5.24-1.002-2.302-.105-3.037-.13-8.898-.13zm0 3.889c5.763 0 6.445.022 8.721.125 2.105.096 3.247.448 4.008.744 1.007.391 1.726.859 2.482 1.614.755.755 1.223 1.474 1.614 2.482.296.76.647 1.903.743 4.007.104 2.276.126 2.959.126 8.722s-.022 6.445-.126 8.721c-.096 2.105-.447 3.247-.743 4.008-.391 1.007-.86 1.726-1.614 2.482-.756.755-1.475 1.223-2.482 1.614-.76.296-1.903.647-4.008.743-2.275.104-2.958.126-8.721.126-5.764 0-6.446-.022-8.722-.126-2.104-.096-3.247-.447-4.007-.743-1.008-.391-1.727-.86-2.482-1.614-.755-.756-1.223-1.475-1.614-2.482-.296-.76-.648-1.903-.744-4.008-.103-2.276-.125-2.958-.125-8.721s.022-6.446.125-8.722c.096-2.104.448-3.247.744-4.007.391-1.008.859-1.727 1.614-2.482.755-.755 1.474-1.223 2.482-1.614.76-.296 1.903-.648 4.007-.744 2.276-.103 2.959-.125 8.722-.125z" fill="currentColor" mask="url(#instagram_svg__b)"></path><path d="M23.9 31.882a7.967 7.967 0 110-15.934 7.967 7.967 0 010 15.934zm-12.273-7.967c0 6.778 5.495 12.273 12.273 12.273s12.273-5.495 12.273-12.273S30.678 11.642 23.9 11.642s-12.273 5.495-12.273 12.273zm27.899-12.758a2.868 2.868 0 11-5.736 0 2.868 2.868 0 015.736 0" fill="currentColor"></path></g></svg></a>
+                        <a><svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M23.99 0C10.722 0 0 10.741 0 23.99c0 10.17 6.318 18.857 15.243 22.351-.217-1.895-.395-4.817.08-6.89.433-1.876 2.803-11.927 2.803-11.927s-.71-1.44-.71-3.554c0-3.337 1.934-5.824 4.343-5.824 2.053 0 3.04 1.54 3.04 3.376 0 2.053-1.302 5.134-1.994 7.997-.572 2.389 1.205 4.344 3.555 4.344 4.264 0 7.542-4.502 7.542-10.979 0-5.745-4.127-9.754-10.03-9.754-6.832 0-10.84 5.114-10.84 10.406 0 2.053.79 4.265 1.777 5.47a.714.714 0 01.158.69c-.178.75-.593 2.39-.672 2.725-.098.435-.355.533-.81.316-2.96-1.421-4.817-5.805-4.817-9.32 0-7.562 5.49-14.512 15.855-14.512 8.313 0 14.79 5.923 14.79 13.86 0 8.274-5.213 14.928-12.44 14.928-2.429 0-4.72-1.264-5.49-2.764l-1.5 5.706c-.533 2.093-1.994 4.7-2.981 6.299 2.25.69 4.62 1.066 7.108 1.066C37.259 48 48 37.259 48 24.01 47.98 10.74 37.239 0 23.99 0z" fill="currentColor" fill-rule="evenodd"></path></svg></a>
+                        <a><svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M23.76 0c13.122 0 23.76 10.638 23.76 23.76 0 13.122-10.638 23.76-23.76 23.76C10.638 47.52 0 36.882 0 23.76 0 10.638 10.638 0 23.76 0zm6.213 13.603a5.73 5.73 0 00-5.726 5.726c0 .451.048.89.155 1.307-4.764-.238-8.982-2.519-11.81-5.988a5.747 5.747 0 00-.771 2.875 5.703 5.703 0 002.554 4.764 5.627 5.627 0 01-2.59-.713v.071a5.735 5.735 0 004.598 5.62 5.71 5.71 0 01-1.51.202 5.47 5.47 0 01-1.08-.107 5.72 5.72 0 005.346 3.98 11.515 11.515 0 01-8.483 2.364 15.96 15.96 0 008.756 2.59c10.537 0 16.3-8.732 16.3-16.3 0-.25 0-.499-.013-.737a11.736 11.736 0 002.863-2.97c-1.021.452-2.126.76-3.29.903a5.725 5.725 0 002.518-3.172 11.6 11.6 0 01-3.635 1.39 5.7 5.7 0 00-4.182-1.805z" fill="currentColor"></path></svg></a>
+                        <a><svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="youtube_svg__a" d="M0 0h47.91v33.537H0z"></path></defs><g transform="translate(0 7)" fill="none" fill-rule="evenodd"><mask id="youtube_svg__b" fill="#fff"><use xlink:href="#youtube_svg__a"></use></mask><path d="M19.164 23.955V9.582l12.447 7.186-12.447 7.187zM46.909 5.237A6.001 6.001 0 0042.673 1c-3.736-1-18.718-1-18.718-1S8.973 0 5.237 1A6 6 0 001 5.237C0 8.973 0 16.768 0 16.768S0 24.564 1.001 28.3a6 6 0 004.236 4.236c3.736 1 18.718 1 18.718 1s14.982 0 18.718-1a6.001 6.001 0 004.236-4.236c1-3.736 1-11.532 1-11.532s0-7.795-1-11.531z" fill="currentColor" mask="url(#youtube_svg__b)"></path></g></svg></a>
+                    </li>
+                </ul>
+            </div>
+            <!-----Footer [Product]----->
+            <div class="footer-product">
+                <div onclick="prodfunct()" class="prod">
+                    <h3>Product</h3><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg></div>
+                <div id="proddrop">
+                    <ul>
+                        <li><a href="">Website</a></li>
+                        <li><a href="">Online Store</a></li>
+                        <li><a href="">Domain</a></li>
+                        <li><a href="">Logo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-----Footer [About]----->
+            <div class="footer-about">
+                <div onclick="aboutfunct()" class="about">
+                    <h3>About us</h3><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg></div>
+                <div id="aboutdrop">
+                    <ul>
+                        <li><a href="">About Jimdo</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Affiliates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-----Footer [Service]----->
+            <div class="footer-service">
+                <div onclick="servfunct()" class="serv">
+                    <h3>Service</h3><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg></div>
+                <div id="servdrop">
+                    <ul>
+                        <li><a href="">Jimdo Blog</a></li>
+                        <li><a href="">Inspiration</a></li>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Contanct Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-----Script for Hiding The Service, Product, and About----->
+            <script>
+                function prodfunct() {
+                    if (proddrop.style.display != "none") {
+                        proddrop.style.display = "none";
+                    } else {
+                        proddrop.style.display = "block";
+                    }
+                }
+
+                function aboutfunct() {
+                    if (aboutdrop.style.display != "none") {
+                        aboutdrop.style.display = "none";
+                    } else {
+                        aboutdrop.style.display = "block";
+                    }
+                }
+
+                function servfunct() {
+                    if (servdrop.style.display != "none") {
+                        servdrop.style.display = "none";
+                    } else {
+                        servdrop.style.display = "block";
+                    }
+                }
+            </script>
+            <!-----Footer [Others]----->
+            <div class="footer-others">
+                <ul>
+                    <li><a href="">Legal notice </a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><i href="">Cookie Setting</i></li>
+                </ul>
+                <!-----Footer [Language]----->
+            </div>
+            <div class="languagesetting">
+                <div class="tab4">
+                    <a><img src="images/british.svg"><img src="images/america.svg"><button class="langdrop">English<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="NavButton-module--arrowIcon--e8965"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path></svg></button></a>
+                    <div class="langcontent">
+                        <div class="lang-row">
+                            <div class="lang-col1">
+                                <!-----Language Content  [SVGs and Text]----->
+                                <ul>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 3" style="border-radius: 50%;"><path d="M0 0h3v3H0z"></path><path fill="#D00" d="M0 1h3v2H0z"></path><path fill="#FFCE00" d="M0 2h3v1H0z"></path></svg><i>Deutsch<i></a></li>
+                                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" style="border-radius: 50%;"><path fill="#c60b1e" d="M0 0h500v4H0z"></path><path fill="#ffc400" d="M0 1h500v2H0z"></path></svg><i>Español</i></a>
+                                    </li>
+                                    <li><a href=""><svg viewBox="0 0 3 3" style="border-radius: 50%;"><path fill="#00267F" d="M0 0h1v3H0z"></path><path fill="#fff" d="M1 0h1v3H1z"></path><path fill="#F31831" d="M2 0h1v3H2z"></path></svg><i>Français</i></a></li>
+                                    <li><a href=""><svg viewBox="0 0 3 3" style="border-radius: 50%;"><path fill="#019246" d="M0 0h1v3H0z"></path><path fill="#fff" d="M1 0h1v3H1z"></path><path fill="#F31831" d="M2 0h1v3H2z"></path></svg><i>Italiano</i></a></li>
+                                    <li><a href=""><svg viewBox="0 0 2 2" style="border-radius: 50%;"><circle fill="#fff" cx="1" cy="1" r="1"></circle><circle fill="#D30000" cx="1" cy="1" r="0.5"></circle></svg><i>日本語</i></a></li>
+                                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 3" style="border-radius: 50%;"><path fill="#AE1C28" d="M0 0h3v3H0z"></path><path fill="#fff" d="M0 1h3v2H0z"></path><path fill="#22468C" d="M0 2h3v1H0z"></path></svg><i>Nederlands</i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
